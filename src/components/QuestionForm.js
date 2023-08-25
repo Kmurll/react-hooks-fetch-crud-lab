@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function QuestionForm(props) {
+function QuestionForm({ createQuestion }) {
   const [formData, setFormData] = useState({
     prompt: "",
     answer1: "",
@@ -19,7 +19,8 @@ function QuestionForm(props) {
 
   function handleSubmit(event) {
     event.preventDefault();
-    console.log(formData);
+    console.log(formData)
+;
   }
 
   return (
@@ -90,4 +91,4 @@ function QuestionForm(props) {
   );
 }
 
-export default QuestionForm;
+export default QuestionForm
